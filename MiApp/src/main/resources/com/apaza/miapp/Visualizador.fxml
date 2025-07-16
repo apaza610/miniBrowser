@@ -8,12 +8,11 @@
 <?import javafx.scene.web.WebView?>
 
 <AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.apaza.miapp.VisualizadorCtrl">
-    <VBox prefHeight="200.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <HBox fillHeight="false" VBox.vgrow="NEVER">
-            <Button mnemonicParsing="false" onAction="#goToSite" text="go" HBox.hgrow="NEVER" />
-            <Button mnemonicParsing="false" onAction="#onFit" text="fit" HBox.hgrow="NEVER" />
+    <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <WebView fx:id="wvNavegador" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS" />
+        <HBox fillHeight="false" maxHeight="1.0" minHeight="1.0" prefHeight="1.0" VBox.vgrow="NEVER">
+            <Button fx:id="btnGo" mnemonicParsing="false" onAction="#goToSite" text="go" HBox.hgrow="NEVER" />
             <TextField fx:id="tfInput" promptText="...path" HBox.hgrow="ALWAYS" />
         </HBox>
-        <WebView fx:id="wvNavegador" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS" />
     </VBox>
 </AnchorPane>
