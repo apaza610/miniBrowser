@@ -26,7 +26,7 @@ public class Visualizador extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Visualizador.class.getResource("Visualizador.fxml"));
         getAnchoAltoDeSVG(elpath);
         scene = new Scene(fxmlLoader.load(), ancho, alto);
-        primaryStage.setTitle("svg viewer");
+        primaryStage.setTitle("SVG viewer");
         primaryStage.setScene(scene);
         stagetmp = primaryStage;
         primaryStage.show();
